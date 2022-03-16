@@ -409,8 +409,10 @@
 .owl-theme .owl-dots {
     position: absolute !important;
     bottom: -20px !important;
-    left: 0 !important;
+    left: unset !important;
     width: 100% !important;
+    top: unset !important;
+    right: unset !important;
 }
 
 
@@ -1122,12 +1124,14 @@
 
 .design-service-block-8 {
     width: 100%;
+    margin-top: 100px;
 }
 
 .design-service-block-8-container {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .design-service-block-8-header h2 {
