@@ -33,6 +33,10 @@ $.getScript( "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.caro
    
 });
 
+if (document.querySelector("#banner-overlay") !== null ) {
+    document.querySelector(".design-service-block-1").classList.add("design-service-block-1-with-topbanner")
+}
+
 
 document.querySelector(".design-service-block-5-grid-4-button-2").addEventListener("click", function() {
     
