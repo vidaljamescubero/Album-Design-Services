@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+#Embed button{
+    display: none !important;
+}
+
 .columns .column.main {
     overflow: unset !important;
 }
@@ -66,7 +70,7 @@
     line-height: 26px;
     text-align: center;
     color: #000000;
-    margin: 40px 0;
+    margin: 25px 0 !important;
 }
 
 .design-service-block-1 h1 {
@@ -95,7 +99,7 @@
     }
 
     .design-service-block-1 h3 {
-        margin: 25px 0
+        margin: 25px 0 !important;
     }
 
     .design-service-block-1-container {
@@ -121,9 +125,8 @@
     height: 75px;
     background: #000000;
     z-index: 15;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    bottom: 0;
 }
 
 .design-service-block-2-container {
@@ -500,9 +503,9 @@
 .design-service-block-4-header h3 {
     font-family: Arial;
     font-style: normal;
-    font-weight: normal;
-    font-size: 38px;
-    line-height: 48px;
+    font-weight: normal !important;
+    font-size: 38px !important;
+    line-height: 48px !important;
     text-align: center;
     color: #FFFFFF;
 }
@@ -510,9 +513,9 @@
 .design-service-block-4-subhead-1 p{
     font-family: Crimson Text;
     font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 45px;
+    font-weight: normal !important;
+    font-size: 30px !important;
+    line-height: 45px !important;
     text-align: center;
     color: #FFFFFF;
     margin: 0 40px;
@@ -521,9 +524,9 @@
 .design-service-block-4-subhead-2 p {
     font-family: Arial;
     font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
+    font-weight: normal !important;
+    font-size: 24px !important;
+    line-height: 28px !important;
     color: #FFFFFF;
     text-align: center;
 }
@@ -545,18 +548,18 @@
 
 @media only screen and (max-width: 1024px) {
     .design-service-block-4-header h3 {
-        font-size: 34px;
-        line-height: 42px;
+        font-size: 34px !important;
+        line-height: 42px !important;
     }
 
     .design-service-block-4-subhead-1 p {
-        font-size: 25px;
-        line-height: 40px;
+        font-size: 25px !important;
+        line-height: 40px !important;
     }
 
     .design-service-block-4-subhead-2 p {
-        font-size: 21px;
-        line-height: 25px;
+        font-size: 21px !important;
+        line-height: 25px !important;
     }
 
     .design-service-block-4-image-desktop {
@@ -567,18 +570,18 @@
 
 @media only screen and (max-width: 850px) {
     .design-service-block-4-header h3 {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 32px !important;
+        line-height: 40px !important;
     }
 
     .design-service-block-4-subhead-1 p {
-        font-size: 21px;
-        line-height: 36px;
+        font-size: 21px !important;
+        line-height: 36px !important;
     }
 
     .design-service-block-4-subhead-2 p {
-        font-size: 19px;
-        line-height: 20px;
+        font-size: 19px !important;
+        line-height: 20px !important;
     }
 
     .design-service-block-4-image-desktop {
@@ -1037,6 +1040,7 @@
     color: #000;
     width: 425px;
     margin: auto;
+    padding-bottom: 0 !important;
   }
 
   .au-commerce-video__button {
@@ -1178,13 +1182,16 @@
 }
 
 .design-service-block-8-accordion-label::before {
-    content: '↓';
+    content: ' ';
     color: black;
     position: absolute;
     top: 50%;
     right: 25px;
-    font-size: 25px;
     transform: translateY(-50%);
+    background-image: url(https://au-assets.s3.us-west-2.amazonaws.com/assets/campaigns/2022/Q1/03-01+Album+Design+Service/down-arrow.png);
+    background-size: 15px 15px;
+    height: 15px;
+    width: 15px;
 }
 
 .design-service-block-8-accordion-content {
@@ -1207,8 +1214,8 @@
 }
 
 .design-service-block-8-accordion-active .design-service-block-8-accordion-label::before {
-    content: '↑';
-    font-size: 25px;
+    background-image: url(https://au-assets.s3.us-west-2.amazonaws.com/assets/campaigns/2022/Q1/03-01+Album+Design+Service/up-arrow.png);
+    
 }
 
 @media screen and (max-width: 1024px) {

@@ -86,3 +86,11 @@ for (let i=0; i<accordion.length; i++) {
     })
   }
 
+window.onload = function() {
+    setTimeout(function(){
+        if (document.querySelector("#launcher") !== null) {
+            document.querySelector("#launcher").style.display = "none";
+        }
+    }, 3000)
+}
+
